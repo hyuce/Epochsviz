@@ -48,7 +48,7 @@ class Epochsviz:
         self.doc.add_root(self.plot)
 
 
-        with open("viz/color_list.pkl", "rb") as f:
+        with open("../color_list.pkl", "rb") as f:
             self.list_color = pickle.load(f)
 
         assert (self.color_train in self.list_color),(
