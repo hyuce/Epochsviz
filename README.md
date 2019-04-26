@@ -74,6 +74,6 @@ This command will automatically open your default browser and display the result
 <img src="gif/videoloss.gif">
 
 ### TO DO
-- [] Add a method to Terminate the thread when the training is done
+- [ ] Add a method to Terminate the thread when the training is done
 
 
