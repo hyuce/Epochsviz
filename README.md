@@ -14,7 +14,7 @@ Install the necessary dependencies
 `pip install -r requirements.txt`  
 
 ### Get Started
-Import the module in your python script
+Import the module in your python script  
 `from Epochsviz.epochsviz import Epochsviz`
 
 Create an Epochsviz object  
