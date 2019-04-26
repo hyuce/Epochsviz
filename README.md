@@ -64,7 +64,7 @@ If your script is named `training.py`, instead of launching the script with the 
 This command will automatically open your default browser and display the result. If you want to visualize the result in another browser remove the `--show` option and copy the link in the other browser.
 
 #### See result in the browser
-<img src="gif/videoloss.git">
+<img src="gif/videoloss.gif">
 
 
 
