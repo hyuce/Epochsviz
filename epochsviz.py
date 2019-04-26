@@ -10,7 +10,10 @@ from tornado import gen
 import pickle
 
 class Epochsviz:
-    """docstring for ClassName"""
+    """This is a simple high level visualization Class built 
+    on top of Bokeh in order to visualize training 
+    and validation losses during the training (in real time).
+    This Class was tested using PyTorch."""
 
     def __init__(self, title='figure', plot_width=600, plot_height=600,
                  name_train_curve='Training loss', color_train='red',
@@ -70,6 +73,13 @@ class Epochsviz:
 
 
     def send_data(self, current_epoch, current_train_loss, current_val_loss):
+        """
+        This function send data to the plot in real time.
+        INPUT: 
+            - The current epoch
+            - The current train loss
+            - The curren val loss
+        """
         new_data = {'epochs': [current_epoch],
                     'trainlosses': [current_train_loss],
                     'vallosses': [current_val_loss] }
@@ -77,5 +87,12 @@ class Epochsviz:
         self.doc.add_next_tick_callback(partial(self.update, new_data))
 
     def start_thread(self, train_function):
+        """
+        This function start another thread in order
+        to run the train function while the other thread
+        is used to run the bokeh server
+        INPUT:
+            - The name of the train function without parameters
+        """
         self.thread = Thread(target=train_function)
         self.thread.start()
