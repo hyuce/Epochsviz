@@ -3,6 +3,8 @@
 This is a simple high level visualization module built on top of <a href="https://bokeh.pydata.org/en/latest/">Bokeh</a> in order to visualize training and validation losses during the training (in real time).
 This module was tested using <a href="https://pytorch.org">PyTorch</a>.
 
+#### Python 3 compatible only!
+
 ### Installation
 Clone the repository in your project location  
 `git clone https://github.com/Mdhvince/Epochsviz.git`  
@@ -75,5 +77,6 @@ This command will automatically open your default browser and display the result
 
 ### TO DO
 - [ ] Add a method to Terminate the thread when the training is done
+- [ ] Make it Python 2 compatible
 
 
