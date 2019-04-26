@@ -19,6 +19,13 @@ Import the module in your python script
 
 Create an Epochsviz object  
 `eviz = Epochsviz()`
+For a custom Epochsviz object, you can change these attribute  
+```
+Epochviz(title='figure', plot_width=600, plot_height=600,
+                 name_train_curve='Training loss', color_train='red',
+                 name_val_curve='Validation loss', color_val='green',
+                 line_width_train=2, line_width_val=2)
+```
 
 Since this module was tested using <a href="https://pytorch.org">PyTorch</a>, I'll show you how to use it within the `train()` function that we usually use for training a Neural Network.  
 
@@ -66,15 +73,7 @@ This command will automatically open your default browser and display the result
 #### See result in the browser
 <img src="gif/videoloss.gif">
 
-
-
-
-
-
-
-
-
-
-
+### TO DO
+[] Add a method to Terminate the thread when the training is done
 
 
