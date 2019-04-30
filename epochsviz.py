@@ -51,20 +51,20 @@ class Epochsviz:
         self.doc.add_root(self.plot)
 
 
-        with open("Epochsviz/color_list.pkl", "rb") as f:
-            self.list_color = pickle.load(f)
+        # with open("Epochsviz/color_list.pkl", "rb") as f:
+        #     self.list_color = pickle.load(f)
 
-        assert (self.color_train in self.list_color),(
-            f"The color {self.color_train} is not in the list_color of available"
-            "colors. "
-            "To see the list of is_available color, call Epochsviz().list_color"
-            )
+        # assert (self.color_train in self.list_color),(
+        #     f"The color {self.color_train} is not in the list_color of available"
+        #     "colors. "
+        #     "To see the list of is_available color, call Epochsviz().list_color"
+        #     )
 
-        assert (self.color_val in self.list_color),(
-            f"The color {self.color_val} is not in the list_color of available"
-            "colors. "
-            "To see the list of is_available color, call Epochsviz().list_color"
-            )
+        # assert (self.color_val in self.list_color),(
+        #     f"The color {self.color_val} is not in the list_color of available"
+        #     "colors. "
+        #     "To see the list of is_available color, call Epochsviz().list_color"
+        #     )
 
 
     @gen.coroutine
